@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/news_activity_fragment_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="famaf.unc.edu.ar.redditreader.NewsActivityFragment"
+    tools:showIn="@layout/activity_news">
+
+
+    <TextView
+        android:id="@+id/loginStatusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No user logged yet"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+       />
+
+    <ImageView
+        android:id="@+id/icono"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:src="@mipmap/ic_launcher"
+        />
+
+
+    <TextView
+        android:id="@+id/texto1"
+        android:layout_width="120dip"
+        android:layout_height="wrap_content"
+        android:textSize="50px"
+        android:text="r/todayilearned"
+        android:layout_toRightOf="@+id/icono"
+        />
+
+    <TextView
+        android:id="@+id/hora"
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:textSize="50px"
+        android:text="Hace 4h"
+        android:layout_toRightOf="@+id/texto1"
+        />
+
+    <TextView
+        android:id="@+id/texto2"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:textSize="70px"
+        android:text="Lorem ipsum dolor \nsit amet, consectetur \nadipiscing elit. Donec"
+        android:layout_below="@+id/texto1"
+        android:layout_toRightOf="@+id/icono"
+        />
+
+    <TextView
+        android:id="@+id/texto3"
+        android:layout_width="120dip"
+        android:layout_height="wrap_content"
+        android:textSize="50px"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/iconComment"
+        android:layout_below="@+id/texto2"
+        android:text="2112 comentarios"
+        />
+
+    <ImageView
+        android:id="@+id/iconComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icono"
+        android:layout_below="@+id/texto2"
+        android:background="@android:drawable/sym_action_chat"
+        />
+
+    <ImageView
+        android:id="@+id/flecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@+id/texto2"
+        android:background="@android:drawable/ic_media_play"
+        android:backgroundTint="#928d8d"
+        />
+
+</RelativeLayout>
